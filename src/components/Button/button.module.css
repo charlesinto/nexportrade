@@ -1,0 +1,12 @@
+.button {
+  background: #3eb259;
+  border: none;
+  padding: 10px 40px;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+}

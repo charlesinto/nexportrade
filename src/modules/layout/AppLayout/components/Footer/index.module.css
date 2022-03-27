@@ -1,0 +1,140 @@
+.footer {
+  background: linear-gradient(135deg, #009f32 0%, #1a740e 100%);
+  padding: 40px 0 0 0;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 40% 15% 15% 15% 15%;
+  column-gap: 10px;
+}
+
+.wrapper1 {
+}
+
+.wrapper1 article {
+  color: #fff;
+}
+
+input {
+  background: #fff;
+  color: #009f32;
+  padding: 12px 12px;
+  border: none;
+  outline: none;
+  flex: 1;
+  margin-right: 2px;
+  font-family: "Open Sans", sans-serif;
+}
+
+input::placeholder {
+  color: #009f32;
+  font-family: "Open Sans", sans-serif;
+}
+
+button {
+  outline: none;
+  border: none;
+  background: #fff;
+  color: #009f32;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+}
+
+article {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+
+.title {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+
+.footerLogo {
+  height: 120px;
+}
+
+ul {
+  list-style: none;
+  list-style-type: none;
+  margin-left: 0px;
+  padding-left: 0;
+  margin-top: 20px;
+}
+
+ul li {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  line-height: 40px;
+}
+
+hr {
+  background: #fff;
+}
+
+li img {
+  margin-right: 6px;
+}
+
+.footerThumbNail {
+  display: grid;
+  grid-template-columns: auto 40%;
+  column-gap: 10px;
+  padding: 16px 0;
+}
+
+.footerThumbNail h1 {
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+}
+
+.footerThumbnailRight {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footerThumbnailRight article {
+  margin-right: 16px;
+  text-decoration: underline;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.nav {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.section1,
+.section2,
+.section3 {
+  padding: 40px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #e63c00;
+  font-family: "Open Sans", sans-serif;
+  cursor: pointer;
+}
+.section1 {
+  background: #f5fbf8;
+}
+
+.section2 {
+  background: #f1f7f3;
+}
+
+.section3 {
+  background: #f5fbf8;
+}

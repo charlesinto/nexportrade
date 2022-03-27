@@ -1,0 +1,420 @@
+.sectionWelcome {
+  display: grid;
+
+  grid-template-columns: 50% 50%;
+  column-gap: 10px;
+  grid-template-areas: "welcomeText1 welcomeImage1";
+}
+
+.homeSection {
+  display: grid;
+  row-gap: 80px;
+  margin-bottom: 80px;
+}
+.welcomeImage1 {
+  grid-area: welcomeImage1;
+  background-image: url("../../assets/svg/map.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.welcomeText1 {
+  grid-area: welcomeText1;
+  display: grid;
+  align-items: center;
+}
+
+.welcomeText1 h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 4.5rem;
+}
+
+.welcomeText1 h1:last-child {
+  margin-bottom: 20px;
+}
+
+.welcomeText1 article {
+  font-family: "Poppins", sans-serif;
+}
+
+.transparentName {
+  background-image: url("../../assets/svg/transparentName.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom center;
+  height: 200px;
+  margin-top: 16px;
+}
+
+.section2 {
+  display: grid;
+
+  grid-template-columns: 50% 50%;
+  column-gap: 30px;
+}
+
+.welcomeImage2 {
+  background-image: url("../../assets/svg/shakeHand.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.welcomeText2 h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 40px;
+  color: #3eb259;
+  line-height: 40px;
+}
+
+.welcomeText2 article {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.section2Info {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  column-gap: 10px;
+}
+
+.section2Info h1,
+.section2Info article {
+  font-family: "Open Sans", sans-serif;
+}
+
+.section2Info h1 {
+  color: #3eb259;
+  font-weight: bold;
+}
+
+.section2Info article {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.heading {
+  color: #ff6633;
+  text-transform: uppercase;
+}
+
+/* section 3 */
+
+.section3 {
+  display: grid;
+
+  grid-template-columns: 50% 50%;
+  column-gap: 30px;
+}
+
+.section3 ul {
+  list-style: none;
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+.section3 ul li {
+  color: #3eb259;
+  line-height: 30px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+
+.welcomeImage3 {
+  background-image: url("../../assets/svg/crane.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.welcomeText3 h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 40px;
+  color: #3eb259;
+  line-height: 40px;
+}
+
+.welcomeText3 article {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.section3Info {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  column-gap: 10px;
+}
+
+.section3Info h1,
+.section3Info article {
+  font-family: "Open Sans", sans-serif;
+}
+
+.section3Info h1 {
+  color: #3eb259;
+  font-weight: bold;
+}
+
+.section3Info article {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* secton 4 */
+
+.section4 {
+  display: grid;
+
+  grid-template-columns: 50% 50%;
+  column-gap: 30px;
+}
+
+.welcomeImage4 {
+  background-image: url("../../assets/svg/warehouse.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.welcomeText4 h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 40px;
+  color: #3eb259;
+  line-height: 40px;
+}
+
+.welcomeText4 article {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.section4Info {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  column-gap: 10px;
+}
+
+.section4Info h1,
+.section4Info article {
+  font-family: "Open Sans", sans-serif;
+}
+
+.section4Info h1 {
+  color: #3eb259;
+  font-size: 14px;
+}
+
+.section4Info article {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* section 5 */
+
+.section5 {
+  display: grid;
+
+  grid-template-columns: 50% 50%;
+  column-gap: 30px;
+}
+
+.welcomeImage5 {
+  background-image: url("../../assets/svg/shakeHand.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.welcomeText5 h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 40px;
+  color: #3eb259;
+  line-height: 40px;
+}
+
+.welcomeText5 article {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.section5Info {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  column-gap: 10px;
+}
+
+.section5Info h1,
+.section5Info article {
+  font-family: "Open Sans", sans-serif;
+}
+
+.section5Info h1 {
+  color: #3eb259;
+  font-weight: bold;
+}
+
+.section5Info article {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.section5 ul {
+  list-style-type: disc;
+  padding-left: 0;
+}
+
+.section5 ul li {
+  color: #3eb259;
+  line-height: 30px;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* section 6 */
+
+.section6 {
+  display: grid;
+
+  grid-template-columns: 45% auto;
+  column-gap: 30px;
+}
+
+.welcomeImage6 {
+  background-image: url("../../assets/svg/shakeHand.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.welcomeText6 h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 40px;
+  color: #3eb259;
+  line-height: 40px;
+}
+
+.welcomeText6 article {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.section6Info {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  column-gap: 10px;
+}
+
+.section6Info h1,
+.section6Info article {
+  font-family: "Open Sans", sans-serif;
+}
+
+.section6Info h1 {
+  color: #3eb259;
+  font-weight: bold;
+}
+
+.section6Info article {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.section6 ul {
+  list-style-type: disc;
+  padding-left: 0;
+}
+
+.section6 ul li {
+  color: #3eb259;
+  line-height: 30px;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.section6 img.logos {
+  height: 120px;
+  object-fit: contain;
+  object-position: center;
+  margin-right: 10px;
+}
+
+.partnerLogo {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.partnerLogo img {
+  height: 120px;
+  object-position: center;
+  object-fit: contain;
+  margin-right: 10px;
+}
+
+/* section 7 */
+
+.section7 {
+  display: grid;
+}
+
+.welcomeImage7 {
+  background-image: url("../../assets/svg/shakeHand.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.welcomeText7 article {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.section7Info {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  column-gap: 10px;
+}
+
+.section7 h1 {
+  color: #ff6633;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+}
+.section7Info article {
+  font-family: "Open Sans", sans-serif;
+}
+
+.section7Info h1 {
+  color: #3eb259;
+  font-weight: bold;
+}
+
+.section7Info article {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.section7 ul {
+  list-style-type: disc;
+  padding-left: 0;
+}
+
+.section7 ul li {
+  color: #3eb259;
+  line-height: 30px;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+}
