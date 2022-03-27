@@ -14,7 +14,7 @@
 .welcomeImage1 {
   grid-area: welcomeImage1;
   background-image: url("../../assets/svg/map.svg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
 }
@@ -42,7 +42,7 @@
 .transparentName {
   background-image: url("../../assets/svg/transparentName.svg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: bottom center;
   height: 200px;
   margin-top: 16px;
@@ -57,7 +57,7 @@
 
 .welcomeImage2 {
   background-image: url("../../assets/svg/shakeHand.svg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
 }
@@ -127,7 +127,7 @@
 
 .welcomeImage3 {
   background-image: url("../../assets/svg/crane.svg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
 }
@@ -178,7 +178,7 @@
 
 .welcomeImage4 {
   background-image: url("../../assets/svg/warehouse.svg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
 }
@@ -229,7 +229,7 @@
 
 .welcomeImage5 {
   background-image: url("../../assets/svg/shakeHand.svg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
 }
@@ -292,7 +292,7 @@
 
 .welcomeImage6 {
   background-image: url("../../assets/svg/shakeHand.svg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
 }
@@ -371,7 +371,7 @@
 
 .welcomeImage7 {
   background-image: url("../../assets/svg/shakeHand.svg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
 }
