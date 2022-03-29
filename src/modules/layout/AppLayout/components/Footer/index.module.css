@@ -1,5 +1,5 @@
 .footer {
-  background: linear-gradient(135deg, #009f32 0%, #1a740e 100%);
+  background: linear-gradient(180deg, #3eb259 0%, #2b9144 100%);
   padding: 40px 0 0 0;
 }
 
@@ -53,6 +53,7 @@ article {
   color: #fff;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
+  text-transform: uppercase;
 }
 
 .footerLogo {
