@@ -1,3 +1,5 @@
+import React from "react";
+
 export interface ILayoutProps {
   closePanel: () => void;
   toggleSideBar: (val: boolean) => void;
