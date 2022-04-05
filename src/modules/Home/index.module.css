@@ -1,9 +1,23 @@
 .sectionWelcome {
   display: grid;
-
+  min-height: 100vh;
+  margin-bottom: 80px;
   grid-template-columns: 50% 50%;
   column-gap: 10px;
   grid-template-areas: "welcomeText1 welcomeImage1";
+}
+
+.header {
+  color: #3eb259;
+}
+
+.sectionWelcome .welcomeText1 {
+  padding-left: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
 }
 
 .homeSection {
@@ -13,7 +27,7 @@
 }
 .welcomeImage1 {
   grid-area: welcomeImage1;
-  background-image: url("../../assets/svg/map.svg");
+  background-image: url("../../assets/svg/map.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
@@ -40,24 +54,31 @@
 }
 
 .transparentName {
-  background-image: url("../../assets/svg/transparentName.svg");
+  /* background-image: url("../../assets/svg/transparentName.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
   height: 200px;
-  margin-top: 16px;
+  margin-top: 16px; */
 }
 
 .section2 {
-  display: grid;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+}
 
+.wrapper {
+  display: grid;
   grid-template-columns: 50% 50%;
   column-gap: 30px;
 }
 
 .welcomeImage2 {
-  background-image: url("../../assets/svg/shakeHand.svg");
+  background-image: url("../../assets/svg/shakeHand.webp");
   background-size: cover;
+  height: 100%;
   background-repeat: no-repeat;
   background-position: top center;
 }
@@ -89,7 +110,7 @@
 
 .section2Info h1 {
   color: #3eb259;
-  font-weight: bold;
+  font-weight: 400;
 }
 
 .section2Info article {
@@ -105,10 +126,10 @@
 /* section 3 */
 
 .section3 {
-  display: grid;
-
-  grid-template-columns: 50% 50%;
-  column-gap: 30px;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .section3 ul {
@@ -126,7 +147,7 @@
 }
 
 .welcomeImage3 {
-  background-image: url("../../assets/svg/crane.svg");
+  background-image: url("../../assets/svg/crane.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
@@ -170,14 +191,14 @@
 /* secton 4 */
 
 .section4 {
-  display: grid;
-
-  grid-template-columns: 50% 50%;
-  column-gap: 30px;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .welcomeImage4 {
-  background-image: url("../../assets/svg/warehouse.svg");
+  background-image: url("../../assets/svg/warehouse.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
@@ -228,7 +249,7 @@
 }
 
 .welcomeImage5 {
-  background-image: url("../../assets/svg/shakeHand.svg");
+  background-image: url("../../assets/svg/shakeHand.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
@@ -291,7 +312,7 @@
 }
 
 .welcomeImage6 {
-  background-image: url("../../assets/svg/shakeHand.svg");
+  background-image: url("../../assets/svg/shakeHand.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
@@ -370,7 +391,7 @@
 }
 
 .welcomeImage7 {
-  background-image: url("../../assets/svg/shakeHand.svg");
+  background-image: url("../../assets/svg/shakeHand.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
