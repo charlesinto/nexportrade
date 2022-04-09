@@ -45,6 +45,10 @@
   color: #009f32;
 }
 
+li.inActive a {
+  color: #000 !important;
+}
+
 li a {
   color: inherit;
   text-decoration: none;
@@ -52,4 +56,10 @@ li a {
 
 li a:hover {
   color: #009f32;
+}
+
+@media screen and (max-width: 768px) {
+  .ul {
+    display: none;
+  }
 }

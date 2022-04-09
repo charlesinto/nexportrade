@@ -49,8 +49,8 @@ const Footer = () => {
                 />
               </p>
             </section>
-            <section></section>
-            <section>
+            <section className={styles.links}></section>
+            <section className={styles.links}>
               <h1 className={styles.title}>Navigation</h1>
               <ul>
                 <li>About Us</li>
@@ -60,7 +60,7 @@ const Footer = () => {
                 <li>Contact Us</li>
               </ul>
             </section>
-            <section>
+            <section className={styles.links}>
               <h1 className={styles.title}>Resources</h1>
               <ul>
                 <li>Learn To Export</li>
@@ -71,7 +71,7 @@ const Footer = () => {
                 <li>Contact Us</li>
               </ul>
             </section>
-            <section>
+            <section className={styles.links}>
               <h1 className={styles.title}>Follow Us</h1>
               <ul>
                 <li>

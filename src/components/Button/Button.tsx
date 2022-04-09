@@ -1,4 +1,5 @@
 import Prop from "prop-types";
+import { Link } from "react-router-dom";
 import styles from "./button.module.css";
 
 interface IProps {
@@ -6,6 +7,7 @@ interface IProps {
   backgroundColor?: string;
   onClick?: (e: any) => void;
   textColor?: string;
+  linkTo?: string;
 }
 
 const Button: React.FC<IProps> = ({
@@ -13,15 +15,18 @@ const Button: React.FC<IProps> = ({
   backgroundColor,
   textColor,
   onClick,
+  linkTo,
 }) => {
   return (
-    <button
-      className={styles.button}
-      style={{ backgroundColor, color: textColor }}
-      onClick={onClick}
-    >
-      {text}
-    </button>
+    <Link to={linkTo || "#"}>
+      <button
+        className={styles.button}
+        style={{ backgroundColor, color: textColor }}
+        onClick={onClick}
+      >
+        {text}
+      </button>
+    </Link>
   );
 };
 

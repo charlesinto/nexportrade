@@ -1,6 +1,6 @@
 .sectionWelcome {
   display: grid;
-  min-height: 100vh;
+  min-height: 110vh;
   margin-bottom: 80px;
   grid-template-columns: 50% 50%;
   column-gap: 10px;
@@ -151,6 +151,11 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
+  grid-area: section3-section2;
+}
+
+.section3 .wrapper {
+  grid-template-areas: "section3-section1 section3-section2";
 }
 
 .welcomeText3 h1 {
@@ -159,6 +164,10 @@
   font-size: 40px;
   color: #3eb259;
   line-height: 40px;
+}
+
+.welcomeText3 {
+  grid-area: section3-section1;
 }
 
 .welcomeText3 article {
@@ -246,6 +255,11 @@
 
   grid-template-columns: 50% 50%;
   column-gap: 30px;
+  grid-template-areas: "section1 section2";
+}
+
+.contentWrapper {
+  grid-area: section2;
 }
 
 .welcomeImage5 {
@@ -253,6 +267,10 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
+}
+
+.welcomeText5 {
+  grid-area: section1;
 }
 
 .welcomeText5 h1 {
@@ -438,4 +456,57 @@
   line-height: 30px;
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  .sectionWelcome {
+    grid-template-columns: 100%;
+    grid-template-areas: "welcomeText1";
+    width: 100%;
+  }
+  .welcomeImage1 {
+    display: none;
+  }
+  .welcomeText1 h1 {
+    font-size: 2.5rem;
+  }
+  .wrapper {
+    grid-template-columns: 100%;
+  }
+  .welcomeImage2,
+  .welcomeImage3,
+  .welcomeImage4,
+  .welcomeImage5,
+  .welcomeImage6,
+  .welcomeImage7 {
+    height: 250px;
+  }
+
+  .section3 ul li {
+    font-size: 12px;
+    line-height: 23px;
+  }
+
+  .section3 .wrapper {
+    grid-template-areas:
+      "section3-section2"
+      "section3-section1";
+  }
+  .section5 {
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "section1"
+      "section2";
+  }
+  .welcomeText5 h1 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .contentWrapper ul {
+    padding: 0 16px;
+  }
+  .contentWrapper ul li {
+    line-height: 24px;
+  }
 }

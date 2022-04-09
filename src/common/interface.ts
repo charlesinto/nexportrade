@@ -1,5 +1,3 @@
-import React from "react";
-
 export interface ILayoutProps {
   closePanel: () => void;
   toggleSideBar: (val: boolean) => void;
@@ -12,7 +10,9 @@ export interface ISideComponentProps {
 export type SideComponentType = (props: ISideComponentProps) => JSX.Element;
 
 export interface IRouteItem {
-  path: string;
+  path?: string;
   exact: boolean;
+  index?: boolean;
   component: JSX.Element;
+  children?: IRouteItem[];
 }

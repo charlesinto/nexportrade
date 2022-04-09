@@ -200,6 +200,7 @@ const Home = () => {
               </div>
             </div>
           </section>
+
           <section className={styles.section5}>
             <div className={styles.welcomeText5}>
               <span className={styles.heading}>
@@ -211,7 +212,7 @@ const Home = () => {
                 <h1>without attending.</h1>
               </div>
             </div>
-            <div>
+            <div className={styles.contentWrapper}>
               <article>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Suspendisse varius enim in eros elementum tristique. Duis
@@ -234,6 +235,7 @@ const Home = () => {
               </ul>
             </div>
           </section>
+
           <section className={styles.section6}>
             <div className={styles.welcomeText6}>
               <span className={styles.heading}>Our Partners</span>

@@ -9,6 +9,15 @@
   column-gap: 10px;
 }
 
+@media screen and (max-width: 768px) {
+  .links {
+    display: none;
+  }
+  .wrapper {
+    grid-template-columns: 100%;
+  }
+}
+
 .wrapper1 {
 }
 
@@ -115,7 +124,19 @@ li img {
 .nav {
   display: grid;
   grid-template-columns: auto auto auto;
+  grid-template-areas: "section1 section2 section3";
 }
+
+@media screen and (max-width: 768px) {
+  .nav {
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "section1"
+      "section3"
+      "section2";
+  }
+}
+
 .section1,
 .section2,
 .section3 {
@@ -130,12 +151,15 @@ li img {
 }
 .section1 {
   background: #f5fbf8;
+  grid-area: section1;
 }
 
 .section2 {
   background: #f1f7f3;
+  grid-area: section2;
 }
 
 .section3 {
   background: #f5fbf8;
+  grid-area: section3;
 }

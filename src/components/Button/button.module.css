@@ -7,6 +7,12 @@
   text-align: center;
   cursor: pointer;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 12px;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+  .button {
+    font-size: 0.5rem;
+  }
 }

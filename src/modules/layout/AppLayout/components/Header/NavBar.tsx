@@ -1,5 +1,6 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import logo from "../../../../../assets/svg/logo.svg";
+import { PublicPaths } from "../../../../../routes";
 import styles from "./index.module.css";
 
 const NavBar = () => {
@@ -7,24 +8,39 @@ const NavBar = () => {
     <nav className={` ${styles.nav}`}>
       <section className={`container ${styles.sectionNav}`}>
         <div className={styles.logo}>
-          <img src={logo} alt="Nexportrade" />
+          <Link to="/">
+            <img src={logo} alt="Nexportrade" />
+          </Link>
         </div>
         <ul className={styles.ul}>
-          <li className={styles.active}>
-            <Link to={"/"}>Home</Link>
-          </li>
-          <li>
-            <Link to={"/about-us"}>About Us</Link>
-          </li>
-          <li>
-            <Link to={"/services"}>Services</Link>
-          </li>
-          <li>
-            <Link to={"/contact"}>Contacts</Link>
-          </li>
+          <CustomLink to={PublicPaths.HOME} children={"Home"} />
+          <CustomLink to={PublicPaths.ABOUT} children={"About Us"} />
+          <CustomLink to={PublicPaths.SERVICES} children={"Services"} />
+          <CustomLink to={PublicPaths.CONTACT} children={"Contacts"} />
         </ul>
       </section>
     </nav>
+  );
+};
+
+const CustomLink: React.FC<{
+  to: string;
+  children: string | JSX.Element;
+}> = ({ to, children }) => {
+  const location = useLocation();
+
+  return (
+    <li
+      className={`${
+        location.pathname === PublicPaths.HOME && to === PublicPaths.HOME
+          ? styles.active
+          : location.pathname.startsWith(`/${to}`) && to !== PublicPaths.HOME
+          ? styles.active
+          : styles.inActive
+      }`}
+    >
+      <Link to={to}>{children}</Link>
+    </li>
   );
 };
 
