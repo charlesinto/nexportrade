@@ -172,7 +172,8 @@
   .itemGridServices {
     grid-template-columns: repeat(auto-fill, minmax(20%, 160px)) !important;
   }
-  .teamGridWrapper {
+  .teamGridWrapper,
+  .itemGridServices {
     grid-template-columns: repeat(auto-fill, minmax(20%, 300px)) !important;
   }
   .article {
