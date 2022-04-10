@@ -154,3 +154,12 @@ table {
 .form-check label {
   margin: 8px;
 }
+
+body {
+  font-family: "Open sans", sans-serif;
+}
+
+article {
+  line-height: 30px;
+  font-size: 20px;
+}
