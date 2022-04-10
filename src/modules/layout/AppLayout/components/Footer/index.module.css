@@ -16,6 +16,18 @@
   .wrapper {
     grid-template-columns: 100%;
   }
+  .wrapper1 article {
+    margin-bottom: 20px;
+    font-family: "Open sans", sans-serif;
+    line-height: 24px;
+  }
+  .footerThumbNail article {
+    font-size: 9px !important;
+  }
+
+  .footerThumbNail {
+    grid-template-columns: auto auto !important;
+  }
 }
 
 .wrapper1 {
