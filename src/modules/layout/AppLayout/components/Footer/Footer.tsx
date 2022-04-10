@@ -41,6 +41,7 @@ const Footer = () => {
               color: "inherit",
               textDecoration: "none",
             }}
+            href="/#"
           >
             <img
               style={{ width: 32, marginBottom: 20 }}
