@@ -1,9 +1,22 @@
+import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import logo from "../../../../../assets/svg/logo.svg";
+import { useMediaQuery } from "../../../../../hooks/useMediaQuery";
 import { PublicPaths } from "../../../../../routes";
 import styles from "./index.module.css";
 
 const NavBar = () => {
+  const [isOpen, setDrawerOpen] = useState(false);
+
+  const isPageWide = useMediaQuery("(min-width: 769px)");
+  const location = useLocation();
+  useEffect(() => {
+    setDrawerOpen(false);
+  }, [isPageWide]);
+
+  useEffect(() => {
+    setDrawerOpen(false);
+  }, [location.pathname]);
   return (
     <nav className={` ${styles.nav}`}>
       <section className={`container ${styles.sectionNav}`}>
@@ -18,6 +31,37 @@ const NavBar = () => {
           <CustomLink to={PublicPaths.SERVICES} children={"Services"} />
           <CustomLink to={PublicPaths.CONTACT} children={"Contacts"} />
         </ul>
+        <span className={styles.menu} onClick={() => setDrawerOpen(true)}>
+          <i className="ion ion-ios-menu"></i>
+        </span>
+        <div
+          style={{
+            width: isOpen ? "60%" : "0px",
+            visibility: isOpen ? "visible" : "hidden",
+          }}
+          className={styles.drawerMenu}
+        >
+          <div className="container">
+            <div className="row">
+              <div className="col-md-12">
+                <span
+                  className={styles.closeIcon}
+                  onClick={() => setDrawerOpen(false)}
+                >
+                  <i className="ion ion-ios-close"></i>
+                </span>
+              </div>
+            </div>
+            <div className={styles.menuContent}>
+              <ul>
+                <CustomLink to={PublicPaths.HOME} children={"Home"} />
+                <CustomLink to={PublicPaths.ABOUT} children={"About Us"} />
+                <CustomLink to={PublicPaths.SERVICES} children={"Services"} />
+                <CustomLink to={PublicPaths.CONTACT} children={"Contacts"} />
+              </ul>
+            </div>
+          </div>
+        </div>
       </section>
     </nav>
   );

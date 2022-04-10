@@ -12,17 +12,64 @@ const Footer = () => {
     <>
       <nav className={styles.nav}>
         <div className={styles.section1}>
-          <img src={redPhone} alt="phone" />
-          <article>+234 (0) 813 000 8967</article>
+          <a
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              flexDirection: "column",
+              alignItems: "center",
+              color: "inherit",
+              textDecoration: "none",
+            }}
+            href="tel:+234813 000 8967"
+          >
+            <img
+              style={{ width: 32, marginBottom: 20 }}
+              src={redPhone}
+              alt="phone"
+            />
+            <article>+234 (0) 813 000 8967</article>
+          </a>
         </div>
         <div className={styles.section2}>
-          <img src={redLocator} alt="map" />
-          <article>4th Floor, MAN House, 77 </article>
-          <article>Awolowo Way, Ikeja, Lagos.</article>
+          <a
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              flexDirection: "column",
+              alignItems: "center",
+              color: "inherit",
+              textDecoration: "none",
+            }}
+          >
+            <img
+              style={{ width: 32, marginBottom: 20 }}
+              src={redLocator}
+              alt="map"
+            />
+            <article>4th Floor, MAN House, 77 </article>
+            <article>Awolowo Way, Ikeja, Lagos.</article>
+          </a>
         </div>
         <div className={styles.section3}>
-          <img src={redSend} alt="mail" />
-          <article>hello@nexportrade.com</article>
+          <a
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              flexDirection: "column",
+              alignItems: "center",
+              color: "inherit",
+              textDecoration: "none",
+            }}
+            href="mailto:hello@nexportrade.com"
+          >
+            <img
+              style={{ width: 32, marginBottom: 20 }}
+              src={redSend}
+              alt="mail"
+            />
+            <article>hello@nexportrade.com</article>
+          </a>
         </div>
       </nav>
       <footer className={`${styles.footer}`}>

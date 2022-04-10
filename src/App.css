@@ -129,6 +129,26 @@ table {
   .col-md-6 {
     margin-bottom: 40px !important;
   }
+
+  .section5,
+  .section6,
+  .section7 {
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "section1"
+      "section2";
+  }
+  .welcomeText5 h1 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .welcomeText5 h1 {
+    line-height: 2.5rem !important;
+  }
+
+  .section5 article {
+    font-size: 14px;
+  }
 }
 
 .form-check label {

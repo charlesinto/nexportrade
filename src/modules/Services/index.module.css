@@ -114,3 +114,33 @@
   color: #ff6633;
   text-transform: uppercase;
 }
+
+@media screen and (max-width: 768px) {
+  .sectionGridWrapper {
+    grid-template-columns: repeat(auto-fill, minmax(20%, 300px));
+  }
+
+  .section5,
+  .section6,
+  .section7 {
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "section1"
+      "section2";
+  }
+  .welcomeText5 h1 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .welcomeText5 h1 {
+    line-height: 2.5rem !important;
+  }
+
+  .section5 article {
+    font-size: 14px;
+  }
+  .title {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+}

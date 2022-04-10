@@ -6,6 +6,7 @@ import maneg from "../../assets/svg/maneg.svg";
 import nexim from "../../assets/svg/nexim.svg";
 import nepc from "../../assets/svg/nepc.svg";
 import TextButton from "../../components/TextButton/TextButton";
+import { PublicPaths } from "../../routes";
 
 const Home = () => {
   return (
@@ -25,8 +26,9 @@ const Home = () => {
           </article>
 
           <div className={styles.transparentName}>
-            <Button text={"OUR SERVICES"} />
+            <Button linkTo={PublicPaths.SERVICES} text={"OUR SERVICES"} />
             <Button
+              linkTo={PublicPaths.CONTACT}
               text={
                 <span className="d-flex align-items-center">
                   <span style={{ textTransform: "uppercase" }}>Contact Us</span>
@@ -316,6 +318,7 @@ const Home = () => {
               </article>
               <div className="mt-3">
                 <TextButton
+                  linkTo={PublicPaths.ABOUT}
                   text={
                     <span className="d-flex align-items-center">
                       <span style={{ textTransform: "uppercase" }}>

@@ -65,7 +65,7 @@ const AboutUsPage = () => {
               style={{ margin: "0 auto", width: "60%" }}
             >
               <div>
-                <article className="text-center">
+                <article className={`${styles.article} text-center`}>
                   Nexportrade Houses Limited (NHL) was established in 2006 to
                   serve as a secure platform for increased and better-organised
                   trade relations among Business Groups operating in ECOWAS
