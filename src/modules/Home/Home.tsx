@@ -231,6 +231,7 @@ const Home = () => {
                 <h1>company.</h1>
                 <div className="mt-3">
                   <TextButton
+                    linkTo={`/${PublicPaths.ABOUT}/${PublicPaths.SHARE_HOLDERS}`}
                     text={
                       <span className="d-flex align-items-center">
                         <span style={{ textTransform: "uppercase" }}>
