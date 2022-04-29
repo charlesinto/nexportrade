@@ -126,7 +126,8 @@ table {
 @media screen and (max-width: 768px) {
   .col-md-12,
   .col,
-  .col-md-6 {
+  .col-md-6,
+  .col-md-8 {
     margin-bottom: 40px !important;
   }
 
