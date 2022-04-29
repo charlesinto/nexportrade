@@ -89,12 +89,18 @@ ul {
   margin-top: 20px;
 }
 
-ul li {
+ul.footerUL li {
   color: #fff;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   cursor: pointer;
   line-height: 40px;
+  display: flex;
+}
+
+ul li a {
+  color: inherit !important;
+  text-decoration: none;
 }
 
 hr {

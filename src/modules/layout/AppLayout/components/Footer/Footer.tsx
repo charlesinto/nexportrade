@@ -7,6 +7,9 @@ import linkedlnWhite from "../../../../../assets/svg/linkedlnWhite.svg";
 import redPhone from "../../../../../assets/svg/redPhone.svg";
 import redLocator from "../../../../../assets/svg/redLocator.svg";
 import redSend from "../../../../../assets/svg/redSend.svg";
+import { Link } from "react-router-dom";
+import { PublicPaths } from "../../../../../routes";
+
 const Footer = () => {
   return (
     <>
@@ -100,28 +103,41 @@ const Footer = () => {
             <section className={styles.links}></section>
             <section className={styles.links}>
               <h1 className={styles.title}>Navigation</h1>
-              <ul>
-                <li>About Us</li>
-                <li>Service</li>
+              <ul className={styles.footerUL}>
+                <li>
+                  <Link to={PublicPaths.ABOUT}>About Us</Link>
+                </li>
+                <li>
+                  <Link to={PublicPaths.SERVICES}>Service</Link>
+                </li>
                 <li>Meet The Team</li>
                 <li>Leadership History</li>
-                <li>Contact Us</li>
+                <li>
+                  <Link to={PublicPaths.CONTACT}>Contact Us</Link>
+                </li>
               </ul>
             </section>
             <section className={styles.links}>
               <h1 className={styles.title}>Resources</h1>
-              <ul>
-                <li>Learn To Export</li>
-                <li>Buying From Nigeria</li>
+              <ul className={styles.footerUL}>
+                <li>
+                  <Link to={PublicPaths.SERVICES}>Learn To Export</Link>
+                </li>
+                <li>
+                  <Link
+                    to={`/${PublicPaths.SERVICES}/${PublicPaths.MANUFACTURER_REPRESENTATION}`}
+                  >
+                    Buying From Nigeria
+                  </Link>
+                </li>
                 <li>eCommerce Portal FAQs</li>
                 <li>Useful Links</li>
                 <li>Export Credit Lines</li>
-                <li>Contact Us</li>
               </ul>
             </section>
             <section className={styles.links}>
               <h1 className={styles.title}>Follow Us</h1>
-              <ul>
+              <ul className={styles.footerUL}>
                 <li>
                   <img src={facebookWhite} alt="facebook" /> Facebook
                 </li>

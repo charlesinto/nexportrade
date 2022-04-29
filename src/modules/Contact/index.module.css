@@ -44,7 +44,7 @@
 .article {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   margin: 10px 0;
   text-align: center;
   line-height: 28px;
@@ -67,14 +67,14 @@
 .welcomeText5 h1 {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
-  font-size: 40px;
+  font-size: 30px;
   color: #3eb259;
   line-height: 40px;
 }
 
 .welcomeText5 article {
   font-family: "Open Sans", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 23px;
 }
 
