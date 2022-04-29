@@ -19,10 +19,13 @@ const AboutUsPage = () => {
           <div className="row">
             <div className="col-md-6">
               <h4 className={styles.heading}>Our Vision</h4>
-              <article className={styles.greenArticleHeading}>
+              <article
+                style={{ maxWidth: 400 }}
+                className={`my-4 ${styles.greenArticleHeading}`}
+              >
                 To be the foremost trade house that will serve as a platform to
-                curb the menace of informal export trade and boost intra-African
-                trade.
+                curb the menace of informal export trade and boost intra-
+                African trade.
               </article>
               <div className="mt-3 d-flex">
                 <Button linkTo={PublicPaths.COMPANY_BIO} text={"COMPANY BIO"} />
@@ -45,16 +48,20 @@ const AboutUsPage = () => {
             <div className="col-md-6">
               <KeyFeatureListItem
                 title="Build a solid foundation in key locations across Africa."
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique."
+                description="Nexportrade operates around ECOWAS states to boost trade relations between West African nations. Our vision is to create a seamless trade relationship among these states in order to grow our economies together."
               />
               <KeyFeatureListItem
-                title="Build a solid foundation in key locations across Africa."
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique."
+                title="Set up a reliable freight forwarding network."
+                description="To further support Nigerian exporters, we envision a West African freight forwarding network with reliable and affordable solutions for cargo delivery. To this effort, we have already proposed the Sealink freight forwarding service which we expect to be up and running in the coming months."
+              />
+              <KeyFeatureListItem
+                title="Negotiate trade subsidies for exporters."
+                description="Collaborating with our partner, the Manufacturers Association of Nigeria’s Export Promotion Group, we would work with the Nigerian government to create trade subsidies targeted at Nigerian exporters to encourage international trade among West African states."
               />
               <KeyFeatureListItem
                 isLast
-                title="Build a solid foundation in key locations across Africa."
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique."
+                title="Spread the word about trading in Africa."
+                description="We know that promoting goods in another country can be a tough task for any business, and to aid businesses grow in around our target areas of operation, we carry out promotional activities like trade fairs and import/export sensitiastion programs."
               />
             </div>
           </div>
@@ -87,6 +94,7 @@ const AboutUsPage = () => {
                   }
                   backgroundColor="#fff"
                   textColor={"#3EB259"}
+                  linkTo={PublicPaths.COMPANY_BIO}
                 />
               </div>
             </div>
@@ -115,8 +123,10 @@ const AboutUsPage = () => {
                     We believe in the Nigerian <br /> economy.
                   </h3>
                   <article>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Suspendisse varius enim in eros elementum tristique.
+                    Our people are very enthusiastic about the Nigerian economy
+                    potential. Everyone at Nexportrade is well versed in a wide
+                    array of businesses involved in international trade and
+                    diplomatic relations.
                   </article>
                 </div>
                 <div className=" d-flex">

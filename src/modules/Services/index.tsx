@@ -13,17 +13,18 @@ const ServiceRootPage = () => {
           <div className="row">
             <div className="col-md-12">
               <div className={styles.section1}>
-                <h1 className={`${styles.title}`}>
-                  Manufacture in Nigeria,
-                  <br /> Sell to Africa
+                <h1 className={`${styles.title} mb-2`}>
+                  A wider market reach from your <br /> homebase in Nigeria
                 </h1>
-                <article className={styles.article}>
+                <article
+                  style={{ maxWidth: 400, margin: "0 auto" }}
+                  className={styles.article}
+                >
                   Our virtual showroom is the first step for Nigerian businesses
-                  - from SMEs to large industry
-                  <br /> giants - to reach unexplored African markets.
+                  - from SMEs to large industry giants - to reach unexplored
+                  African markets.
                 </article>
-                <div className="d-flex">
-                  <Button text={"VISIT THE PORTAL"} />
+                <div className="d-flex my-4">
                   <Button
                     text={
                       <span className="d-flex align-items-center">

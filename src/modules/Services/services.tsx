@@ -25,39 +25,27 @@ const ServicesPage = () => {
               <div className={styles.sectionGridWrapper}>
                 <ItemCard
                   bannerImage={require("../../assets/svg/shakeHand.webp")}
-                  title={
-                    <h1>
-                      Commission <br /> Agency
-                    </h1>
-                  }
+                  title={<h1>Export Market Development</h1>}
                   linkTo={PublicPaths.COMMISSION_AGENCY}
+                  subTitle="Partner with Nexportrade on your journey to discovering markets beyond Nigerian borders."
                 />
                 <ItemCard
                   bannerImage={require("../../assets/svg/crane.webp")}
-                  title={
-                    <h1>
-                      Import &amp; Export <br /> Support
-                    </h1>
-                  }
+                  title={<h1>Import &amp; Export Processing Support</h1>}
                   linkTo={PublicPaths.IMPORT_EXPORT}
+                  subTitle="Nexportrade guarantees lower cost, faster transit times for West-African import and export processing."
                 />
                 <ItemCard
                   bannerImage={require("../../assets/svg/warehouse.webp")}
-                  title={
-                    <h1>
-                      Warehousing <br /> Solutions
-                    </h1>
-                  }
+                  title={<h1>Warehousing Solutions</h1>}
                   linkTo={PublicPaths.WAREHOUSING}
+                  subTitle="Increase inventory efficiency and help you respond to changing customer demands from overseas faster."
                 />
                 <ItemCard
                   bannerImage={require("../../assets/svg/market.webp")}
-                  title={
-                    <h1>
-                      Manufacturer <br /> Representation
-                    </h1>
-                  }
+                  title={<h1>Manufacturer Representation</h1>}
                   linkTo={PublicPaths.MANUFACTURER_REPRESENTATION}
+                  subTitle="Speak directly  with customers at trade shows, conduct special product events and close sales across the continent."
                 />
               </div>
             </div>

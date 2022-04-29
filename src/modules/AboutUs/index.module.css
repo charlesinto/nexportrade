@@ -160,7 +160,7 @@
   display: grid;
   row-gap: 20px;
   column-gap: 20px;
-  grid-template-columns: repeat(auto-fill, minmax(20%, 200px));
+  grid-template-columns: repeat(auto-fill, minmax(20%, 250px));
   justify-content: center;
 }
 

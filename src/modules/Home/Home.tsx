@@ -48,57 +48,42 @@ const Home = () => {
             <div className={styles.wrapper}>
               <div className={styles.welcomeImage2}></div>
               <div className={styles.welcomeText2}>
-                <span className={styles.heading}>COMMISSION AGENCY</span>
+                <span className={styles.heading}>
+                  Export Market Development
+                </span>
                 <div className="mt-4">
-                  <h1>An overseas sales </h1>
-                  <h1>team without staffing</h1>
-                  <h1>hassles.</h1>
+                  <h1>
+                    An overseas sales <br /> team without staffing <br />{" "}
+                    hassles.{" "}
+                  </h1>
                 </div>
 
-                <article>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse varius enim in eros elementum tristique. Duis
-                  cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
-                  commodo diam libero vitae erat.
+                <article className="my-4">
+                  Partner with Nexportrade on your journey to discovering
+                  markets beyond Nigerian borders. Our team is well equipped to
+                  conduct market research, promotional activities, and awareness
+                  campaigns for you while your base of operations is still in
+                  Nigeria, and when you are ready to go on your own, we will
+                  make sure you have a soft landing into your new market.
                 </article>
 
-                <div className={`my-5 ${styles.section2Info}`}>
-                  <div>
-                    <h1>50% </h1>
-
-                    <article className="mb-3">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Suspendisse varius enim in eros.
-                    </article>
-
-                    <Button text={"See More"} />
-                  </div>
-                  <div>
-                    <h1>50% </h1>
-
-                    <article className="mb-3">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Suspendisse varius enim in eros.
-                    </article>
-
-                    <TextButton
-                      text={
-                        <span className="d-flex align-items-center">
-                          <span style={{ textTransform: "uppercase" }}>
-                            See More
-                          </span>
-                          <img
-                            alt="arrow"
-                            className="px-2"
-                            src={arrorForward}
-                          />
+                <div className="my-4">
+                  <Button linkTo={PublicPaths.SERVICES} text={"LEARN MORE"} />
+                  <Button
+                    linkTo={PublicPaths.CONTACT}
+                    text={
+                      <span className="d-flex align-items-center">
+                        <span style={{ textTransform: "uppercase" }}>
+                          schedule a meeting
                         </span>
-                      }
-                      backgroundColor="#fff"
-                      textColor={"#3EB259"}
-                    />
-                  </div>
+                        <img alt="arrow" className="px-2" src={arrorForward} />
+                      </span>
+                    }
+                    backgroundColor="#fff"
+                    textColor={"#3EB259"}
+                  />
                 </div>
+                <div className="my-4"></div>
               </div>
             </div>
           </section>
@@ -108,48 +93,44 @@ const Home = () => {
                 <span className={styles.heading}>
                   IMPORT &amp; EXPORT FACILITATION
                 </span>
-                <div className="mt-4">
-                  <h1>Guaranteed logisitcs to</h1>
-                  <h1> strenghten your</h1>
-                  <h1>market visibility.</h1>
+                <div className="my-4">
+                  <h1>
+                    Professional cross- <br />
+                    border trade
+                    <br /> processing.
+                  </h1>
                 </div>
 
-                <article>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse varius enim in eros elementum tristique. Duis
-                  cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
-                  commodo diam libero vitae erat.
+                <article className="my-4">
+                  Our team is well experienced in export-import around
+                  West-Africa. Choosing Nexportrade to process deliveries to and
+                  from West-African countries gurantees a lower cost and faster
+                  delivery times for all your import-export needs. As an added
+                  bonus, we can help you source the right suppliers for and
+                  importers for your product’s lifecycle.
                 </article>
 
-                <ul>
+                <ul className="my-4">
                   <li>
                     <img src={vector} alt="vector" />
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Affordable cargo delivery with our groupage service.
                   </li>
                   <li>
                     <img src={vector} alt="vector" />
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Faster land-border export processing.
                   </li>
                   <li>
                     <img src={vector} alt="vector" />
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </li>
-                  <li>
-                    <img src={vector} alt="vector" />
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </li>
-                  <li>
-                    <img src={vector} alt="vector" />
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Professional export documentation services.
                   </li>
                 </ul>
                 <div className="my-3">
-                  <Button text={"Button"} />
+                  <Button linkTo={PublicPaths.SERVICES} text={"LEARN MORE"} />
                   <Button
                     text={
                       <span className="d-flex align-items-center">
                         <span style={{ textTransform: "uppercase" }}>
-                          Button
+                          arrange a delivery
                         </span>
                         <img alt="arrow" className="px-2" src={arrorForward} />
                       </span>
@@ -168,34 +149,40 @@ const Home = () => {
               <div className={styles.welcomeImage4}></div>
               <div className={styles.welcomeText4}>
                 <span className={styles.heading}>WAREHOUSING SOLUTIONS</span>
-                <div className="mt-4">
-                  <h1>Improve verticals with </h1>
-                  <h1>our warehousing</h1>
-                  <h1>solutions.</h1>
+                <div className="my-4">
+                  <h1>
+                    A safe place to store <br /> your goods while in
+                    <br /> transit.{" "}
+                  </h1>
                 </div>
 
-                <article>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse varius enim in eros elementum tristique. Duis
-                  cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
-                  commodo diam libero vitae erat.
+                <article className="my-4">
+                  Our Warehousing Solutions are designed to increase inventory
+                  efficiency and help you respond to changing customer demands
+                  from overseas faster. We offer temporary storage for goods -
+                  typically up to a maximum of two days -so businesses worry
+                  less about the safety of their goods while transaction details
+                  are ironed out. Our storage facilities can also be used to
+                  serve other business needs while your goods are in transit.
                 </article>
 
                 <div className={`my-5 ${styles.section4Info}`}>
                   <div>
-                    <h1>Subheading One </h1>
+                    <h1>As proof of product availability </h1>
 
                     <article className="mb-3">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Suspendisse varius enim in eros.
+                      When your customers demand proof of availability, we can
+                      hold your goods in our storage facilities until they are
+                      satisfied and ready to purchase.
                     </article>
                   </div>
                   <div>
-                    <h1>Subheading Two </h1>
+                    <h1>As a temporary hold for tradeshows</h1>
 
                     <article className="mb-3">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Suspendisse varius enim in eros.
+                      When you want to send your products to out of the country
+                      to tradeshows and product demonstrations, we can provide
+                      safe storage for the duration of the event.
                     </article>
                   </div>
                 </div>
@@ -208,32 +195,30 @@ const Home = () => {
               <span className={styles.heading}>
                 Maunfacturer Representation
               </span>
-              <div className="mt-4">
-                <h1>Create a presence at</h1>
-                <h1>trade fairs and events</h1>
-                <h1>without attending.</h1>
+              <div className="my-4">
+                <h1>
+                  Attend trade shows
+                  <br /> and conduct special
+                  <br /> product events
+                  <br />
+                  remotely.
+                </h1>
               </div>
             </div>
             <div className={styles.contentWrapper}>
-              <article>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse varius enim in eros elementum tristique. Duis
-                cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
-                commodo diam libero vitae erat.
+              <article className="my-4">
+                As you grow your market and spread your reach across Africa, you
+                will need some level of presence in the markets you wish to
+                operate. We can provide the help you need to speak directly with
+                cutomers at trade shows, conduct special product events and
+                close sales across the continent.
               </article>
-              <ul className="mt-3">
-                <li>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}
-                </li>
-                <li>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}
-                </li>
-                <li>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}
-                </li>
-                <li>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}
-                </li>
+              <ul className="my-3">
+                <li>Special product events and sample showcasing.</li>
+                <li>Pop up shops for awareness campaigns and sales. </li>
+                <li>Trade show hosting and attendance. </li>
+                <li>After sales support services. </li>
+                <li>After sales support services. </li>
               </ul>
             </div>
           </section>
@@ -245,7 +230,7 @@ const Home = () => {
                 <h1>You are in good</h1>
                 <h1>company.</h1>
                 <div className="mt-3">
-                  <Button
+                  <TextButton
                     text={
                       <span className="d-flex align-items-center">
                         <span style={{ textTransform: "uppercase" }}>
@@ -269,7 +254,9 @@ const Home = () => {
 
           <section className={styles.section7}>
             <div className={styles.welcomeText7}>
-              <h1>Get started exporting with us today</h1>
+              <h1>
+                Coming soon. The Nexportrade <br /> Virtual Showroom
+              </h1>
             </div>
             <div
               style={{
@@ -286,7 +273,7 @@ const Home = () => {
               </article>
             </div>
             <div className="mt-2 d-flex justify-content-center">
-              <Button text={"View Portal"} />
+              {/* <Button text={"View Portal"} /> */}
               <Button
                 text={
                   <span className="d-flex align-items-center">
@@ -296,6 +283,7 @@ const Home = () => {
                     <img alt="arrow" className="px-2" src={arrorForward} />
                   </span>
                 }
+                linkTo={PublicPaths.SERVICES}
                 backgroundColor="#fff"
                 textColor={"#3EB259"}
               />
