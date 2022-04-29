@@ -1,3 +1,4 @@
+import { ServicesSubMenu } from ".";
 import SectionBanner from "../../components/SectionBanner/SectionBanner";
 import styles from "./index.module.css";
 
@@ -62,7 +63,9 @@ const CommissionAgency = () => {
                 awareness and presence.
               </article>
             </div>
-            <div className="col-md-4"></div>
+            <div className="col-md-4">
+              <ServicesSubMenu />
+            </div>
           </div>
         </div>
       </div>

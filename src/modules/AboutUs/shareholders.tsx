@@ -4,6 +4,7 @@ import styles from "./index.module.css";
 import arrowForward from "../../assets/svg/arrowForward.svg";
 import { PublicPaths } from "../../routes";
 import ShareHolder from "./components/shareholderItem";
+import { AboutSubMenu } from ".";
 
 const ShareHolders = () => {
   return (
@@ -28,7 +29,7 @@ const ShareHolders = () => {
               <div className="row">
                 <div className="col-md-12">
                   <ul>
-                    <li className="my-4">
+                    <li className="mb-4">
                       <span
                         className="my-2"
                         style={{ color: "#3EB259", fontSize: 22 }}
@@ -162,7 +163,9 @@ const ShareHolders = () => {
                 </div>
               </div>
             </div>
-            <div className="col-md-4"></div>
+            <div className="col-md-4">
+              <AboutSubMenu />
+            </div>
           </div>
         </div>
       </div>

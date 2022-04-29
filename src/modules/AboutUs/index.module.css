@@ -262,3 +262,29 @@
   line-height: 20px;
   font-weight: 400;
 }
+
+.subMenuWrapper {
+}
+
+.subMenuWrapper h1 {
+  background-color: #ff6633;
+  border: none;
+  padding: 16px 16px;
+  text-transform: capitalize;
+}
+
+.subMenuWrapper ul {
+  list-style: disc;
+  padding-left: 16px;
+  margin-top: 16px;
+}
+
+.subMenuWrapper ul li {
+  color: #3eb259;
+}
+
+.subMenuWrapper ul li a {
+  color: #3eb259;
+  text-transform: capitalize;
+  text-decoration: none;
+}

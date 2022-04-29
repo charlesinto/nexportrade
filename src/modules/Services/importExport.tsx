@@ -1,3 +1,4 @@
+import { ServicesSubMenu } from ".";
 import SectionBanner from "../../components/SectionBanner/SectionBanner";
 import styles from "./index.module.css";
 
@@ -65,7 +66,9 @@ const ImportExport = () => {
               <br />
               <br />
             </div>
-            <div className="col-md-4"></div>
+            <div className="col-md-4">
+              <ServicesSubMenu />
+            </div>
           </div>
         </div>
       </div>

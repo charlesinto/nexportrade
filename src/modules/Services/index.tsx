@@ -2,7 +2,9 @@ import Button from "../../components/Button/Button";
 import styles from "./index.module.css";
 import arrowForward from "../../assets/svg/arrowForward.svg";
 import TextButton from "../../components/TextButton/TextButton";
-import { Outlet } from "react-router-dom";
+import { Link, Outlet, useLocation } from "react-router-dom";
+import { PublicPaths } from "../../routes";
+import { useEffect, useState } from "react";
 
 const ServiceRootPage = () => {
   return (
@@ -73,6 +75,52 @@ const ServiceRootPage = () => {
             </div>
           </section>
         </div>
+      </div>
+    </div>
+  );
+};
+
+export const ServicesSubMenu = () => {
+  const [pathName, setPathName] = useState(``);
+  const location = useLocation();
+  useEffect(() => {
+    setPathName(location.pathname);
+  }, [location.pathname]);
+  return (
+    <div className={styles.subMenuWrapper}>
+      <h1>
+        <span className="text-white">BROWSE OTHER SERVICES</span>
+      </h1>
+      <ul>
+        {pathName !==
+          `/${PublicPaths.SERVICES}/${PublicPaths.COMMISSION_AGENCY}` && (
+          <li>
+            <Link
+              to={`/${PublicPaths.SERVICES}/${PublicPaths.COMMISSION_AGENCY}`}
+            >
+              Commission Agency
+            </Link>
+          </li>
+        )}
+        {pathName !==
+          `/${PublicPaths.SERVICES}/${PublicPaths.IMPORT_EXPORT}` && (
+          <li>
+            <Link to={`/${PublicPaths.SERVICES}/${PublicPaths.IMPORT_EXPORT}`}>
+              Import/Export Facilitation
+            </Link>
+          </li>
+        )}
+        {pathName !== `/${PublicPaths.SERVICES}/${PublicPaths.WAREHOUSING}` && (
+          <li>
+            <Link to={`/${PublicPaths.SERVICES}/${PublicPaths.WAREHOUSING}`}>
+              Manufacturer Representation
+            </Link>
+          </li>
+        )}
+      </ul>
+
+      <div className="d-flex justify-content-center my-4">
+        <Button linkTo={`/${PublicPaths.CONTACT}`} text={"CONTACT US"} />
       </div>
     </div>
   );
