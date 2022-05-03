@@ -31,6 +31,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
+  background-position: center;
 }
 
 .welcomeText1 {
@@ -80,7 +81,7 @@
   background-size: cover;
   height: 100%;
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: center;
 }
 
 .welcomeText2 h1 {
@@ -150,7 +151,7 @@
   background-image: url("../../assets/svg/crane.webp");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: center;
   grid-area: section3-section2;
 }
 
@@ -210,7 +211,7 @@
   background-image: url("../../assets/svg/warehouse.webp");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: center;
 }
 
 .welcomeText4 h1 {
