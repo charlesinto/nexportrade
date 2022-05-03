@@ -90,7 +90,8 @@ ul {
 }
 
 ul,
-ul.footerUL li {
+ul.footerUL li,
+ul.footerULIcons li {
   color: #fff;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
@@ -98,7 +99,7 @@ ul.footerUL li {
   line-height: 40px;
 }
 
-ul.footerUL {
+ul.footerULIcons li {
   display: flex;
 }
 
@@ -184,4 +185,9 @@ li img {
 .section3 {
   background: #f5fbf8;
   grid-area: section3;
+}
+
+ul.footerUL li a:hover,
+ul.footerULIcons li a:hover {
+  color: #fff;
 }

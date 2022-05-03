@@ -137,7 +137,7 @@ const Footer = () => {
             </section>
             <section className={styles.links}>
               <h1 className={styles.title}>Follow Us</h1>
-              <ul className={styles.footerUL}>
+              <ul className={styles.footerULIcons}>
                 <li>
                   <img src={facebookWhite} alt="facebook" /> Facebook
                 </li>
