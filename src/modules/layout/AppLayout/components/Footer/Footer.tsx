@@ -110,8 +110,16 @@ const Footer = () => {
                 <li>
                   <Link to={PublicPaths.SERVICES}>Service</Link>
                 </li>
-                <li>Meet The Team</li>
-                <li>Leadership History</li>
+                <li>
+                  <Link to={`/${PublicPaths.ABOUT}/${PublicPaths.TEAMS}`}>
+                    Meet the Team
+                  </Link>
+                </li>
+                <li>
+                  <Link to={`/${PublicPaths.ABOUT}/${PublicPaths.LEADERSHIP}`}>
+                    Leadership History
+                  </Link>
+                </li>
                 <li>
                   <Link to={PublicPaths.CONTACT}>Contact Us</Link>
                 </li>

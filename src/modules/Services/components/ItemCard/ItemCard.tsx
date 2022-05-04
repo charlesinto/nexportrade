@@ -28,7 +28,7 @@ const ItemCard: React.FC<IProps> = ({
             <span className="d-flex align-items-center">
               <span style={{ textTransform: "uppercase" }}>Learn More</span>
               <img
-                style={{ width: 22, height: 22, objectFit: "cover" }}
+                style={{ width: 24, height: 24, objectFit: "cover" }}
                 alt="arrow"
                 className="px-2"
                 src={arrowForward}
