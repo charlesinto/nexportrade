@@ -234,7 +234,8 @@ const Home = () => {
             </div>
             <div
               style={{
-                width: "50%",
+                minWidth: "300px",
+                maxWidth: "60%",
                 margin: "10px auto",
               }}
             >
