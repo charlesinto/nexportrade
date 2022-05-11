@@ -1,6 +1,7 @@
 import styles from "./index.module.css";
 import Button from "../../components/Button/Button";
-import arrorForward from "../../assets/svg/arrorForwardWhite.svg";
+import arrorForward from "../../assets/svg/arrowForward.svg";
+import arrorForwardWhite from "../../assets/svg/arrorForwardWhite.svg";
 import vector from "../../assets/svg/vector.svg";
 import maneg from "../../assets/svg/maneg.svg";
 import nexim from "../../assets/svg/nexim.svg";
@@ -370,7 +371,7 @@ export const MobileHero = () => (
                     style={{ width: "30px", height: "auto" }}
                     alt="arrow"
                     className="px-2"
-                    src={arrorForward}
+                    src={arrorForwardWhite}
                   />
                 </span>
               }
