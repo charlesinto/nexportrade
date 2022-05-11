@@ -8,6 +8,7 @@ interface IProps {
   onClick?: (e: any) => void;
   textColor?: string;
   linkTo?: string;
+  buttonStyle?: React.CSSProperties | undefined;
 }
 
 const Button: React.FC<IProps> = ({
@@ -16,12 +17,13 @@ const Button: React.FC<IProps> = ({
   textColor,
   onClick,
   linkTo,
+  buttonStyle,
 }) => {
   return (
     <Link to={linkTo || "#"}>
       <button
         className={styles.button}
-        style={{ backgroundColor, color: textColor }}
+        style={{ backgroundColor, color: textColor, ...buttonStyle }}
         onClick={onClick}
       >
         {text}

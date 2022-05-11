@@ -374,7 +374,7 @@ export const MobileHero = () => (
                   />
                 </span>
               }
-              backgroundColor="none"
+              buttonStyle={{ background: "none", color: "#fff" }}
               textColor={"#fff"}
             />
           </div>
