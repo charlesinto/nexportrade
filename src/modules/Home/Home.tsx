@@ -1,55 +1,19 @@
 import styles from "./index.module.css";
 import Button from "../../components/Button/Button";
-import arrorForward from "../../assets/svg/arrowForward.svg";
+import arrorForward from "../../assets/svg/arrorForwardWhite.svg";
 import vector from "../../assets/svg/vector.svg";
 import maneg from "../../assets/svg/maneg.svg";
 import nexim from "../../assets/svg/nexim.svg";
 import nepc from "../../assets/svg/nepc.svg";
 import TextButton from "../../components/TextButton/TextButton";
 import { PublicPaths } from "../../routes";
+import { useMediaQuery } from "../../hooks/useMediaQuery";
 
 const Home = () => {
+  const isSmallScreen = useMediaQuery("(max-width: 768px)");
   return (
     <>
-      <section className={styles.sectionWelcome}>
-        <div className={styles.welcomeText1}>
-          <div className="container">
-            <div className="row">
-              <div className="col-md-12">
-                <div>
-                  <h1 className={styles.header}>Transforming </h1>
-                  <h1 className={styles.header}>West Africa’s </h1>
-                  <h1 className={styles.header}>Trade Relations</h1>
-                </div>
-
-                <article className="mb-3">
-                  Nexportrade is a secure platform created by the Manufacturers
-                  Association of Nigeria’s Export Promotion Group to boost trade
-                  relations in ECOWAS member states and African Nations.
-                </article>
-
-                <div className={styles.transparentName}>
-                  <Button linkTo={PublicPaths.SERVICES} text={"OUR SERVICES"} />
-                  <Button
-                    linkTo={PublicPaths.CONTACT}
-                    text={
-                      <span className="d-flex align-items-center">
-                        <span style={{ textTransform: "uppercase" }}>
-                          Contact Us
-                        </span>
-                        <img alt="arrow" className="px-2" src={arrorForward} />
-                      </span>
-                    }
-                    backgroundColor="#fff"
-                    textColor={"#3EB259"}
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className={styles.welcomeImage1}></div>
-      </section>
+      {isSmallScreen ? <MobileHero /> : <DesktopHero />}
       <div className="container">
         <div className={styles.homeSection}>
           <section className={styles.section2}>
@@ -335,5 +299,89 @@ const Home = () => {
     </>
   );
 };
+
+export const DesktopHero = () => (
+  <section className={styles.sectionWelcome}>
+    <div className={styles.welcomeText1}>
+      <div className="container">
+        <div className="row">
+          <div className="col-md-12">
+            <div>
+              <h1 className={styles.header}>Transforming </h1>
+              <h1 className={styles.header}>West Africa’s </h1>
+              <h1 className={styles.header}>Trade Relations</h1>
+            </div>
+
+            <article className="mb-3">
+              Nexportrade is a secure platform created by the Manufacturers
+              Association of Nigeria’s Export Promotion Group to boost trade
+              relations in ECOWAS member states and African Nations.
+            </article>
+
+            <div className={styles.transparentName}>
+              <Button linkTo={PublicPaths.SERVICES} text={"OUR SERVICES"} />
+              <Button
+                linkTo={PublicPaths.CONTACT}
+                text={
+                  <span className="d-flex align-items-center">
+                    <span style={{ textTransform: "uppercase" }}>
+                      Contact Us
+                    </span>
+                    <img alt="arrow" className="px-2" src={arrorForward} />
+                  </span>
+                }
+                backgroundColor="#fff"
+                textColor={"#3EB259"}
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div className={styles.welcomeImage1}></div>
+  </section>
+);
+
+export const MobileHero = () => (
+  <div className={styles.mobileScreenWrapper}>
+    <div className="container">
+      <div className="row">
+        <div className="col-md-12">
+          <div>
+            <h1 className={styles.header}>
+              Transforming Trade <br /> in West-Africa{" "}
+            </h1>
+          </div>
+
+          <article className="mb-3">
+            Nexportrade is a secure platform created by the Manufacturers
+            Association of Nigeria’s Export Promotion Group to boost trade
+            relations in ECOWAS member states and African Nations.
+          </article>
+
+          <div className={styles.transparentName}>
+            <Button linkTo={PublicPaths.SERVICES} text={"OUR SERVICES"} />
+            <Button
+              linkTo={PublicPaths.CONTACT}
+              text={
+                <span className="d-flex align-items-center">
+                  <span style={{ textTransform: "uppercase" }}>Contact Us</span>
+                  <img
+                    style={{ width: "30px", height: "auto" }}
+                    alt="arrow"
+                    className="px-2"
+                    src={arrorForward}
+                  />
+                </span>
+              }
+              backgroundColor="none"
+              textColor={"#fff"}
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+);
 
 export default Home;

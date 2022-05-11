@@ -7,6 +7,17 @@
   grid-template-areas: "welcomeText1 welcomeImage1";
 }
 
+.mobileScreenWrapper {
+  min-height: 75vh;
+  background: url("../../assets/svg/mobileHero.webp");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
 .header {
   color: #3eb259;
 }
@@ -84,7 +95,8 @@
   background-position: center;
 }
 
-.welcomeText2 h1 {
+.welcomeText2 h1,
+.mobileScreenWrapper h1.header {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   font-size: 30px;
@@ -92,10 +104,22 @@
   line-height: 40px;
 }
 
-.welcomeText2 article {
+.welcomeText2 article,
+.mobileScreenWrapper article {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   line-height: 23px;
+}
+
+.mobileScreenWrapper h1.header,
+.mobileScreenWrapper article {
+  color: #fff !important;
+}
+
+.mobileScreenWrapper h1.header {
+}
+.mobileScreenWrapper article {
+  margin: 20px 0;
 }
 
 .section2Info {
