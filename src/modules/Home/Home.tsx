@@ -141,7 +141,15 @@ const Home = () => {
 
                 <div className={`my-5 ${styles.section4Info}`}>
                   <div>
-                    <h1>As proof of product availability </h1>
+                    <h1
+                      style={{
+                        lineHeight: "1.3rem",
+                        marginBottom: "10px",
+                      }}
+                      className={styles.infoHeader}
+                    >
+                      As proof of product availability
+                    </h1>
 
                     <article className="mb-3">
                       When your customers demand proof of availability, we can
@@ -150,7 +158,15 @@ const Home = () => {
                     </article>
                   </div>
                   <div>
-                    <h1>As a temporary hold for tradeshows</h1>
+                    <h1
+                      style={{
+                        lineHeight: "1.3rem",
+                        marginBottom: "10px",
+                      }}
+                      className={styles.infoHeader}
+                    >
+                      As a temporary hold for tradeshows
+                    </h1>
 
                     <article className="mb-3">
                       When you want to send your products to out of the country

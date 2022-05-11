@@ -57,7 +57,7 @@ const NavBar = () => {
                 <CustomLink to={PublicPaths.HOME} children={"Home"} />
                 <CustomLink to={PublicPaths.ABOUT} children={"About Us"} />
                 <CustomLink to={PublicPaths.SERVICES} children={"Services"} />
-                <CustomLink to={PublicPaths.CONTACT} children={"Contacts"} />
+                <CustomLink to={PublicPaths.CONTACT} children={"Contact Us"} />
               </ul>
             </div>
           </div>
