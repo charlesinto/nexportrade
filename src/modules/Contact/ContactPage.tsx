@@ -16,7 +16,8 @@ const ContactPage = () => {
                   <span className={styles.heading}>LET’S TALK</span>
                   <h1>Contact Us</h1>
                   <article>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Get in touch with us for export support, information and
+                    help with getting your products around West-Africa.
                   </article>
                 </div>
               </div>
