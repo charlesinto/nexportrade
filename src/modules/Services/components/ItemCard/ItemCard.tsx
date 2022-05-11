@@ -20,7 +20,12 @@ const ItemCard: React.FC<IProps> = ({
   return (
     <Link className={styles.linkWrapper} to={linkTo || "#"}>
       <div className={styles.wrapper}>
-        <img src={bannerImage} style={{ objectFit: "cover" }} alt="card" />
+        <img
+          className={styles["banner-img"]}
+          src={bannerImage}
+          style={{ objectFit: "cover" }}
+          alt="card"
+        />
         <div className="mt-3">{title}</div>
         <article>{subTitle}</article>
         <TextButton
@@ -28,7 +33,7 @@ const ItemCard: React.FC<IProps> = ({
             <span className="d-flex align-items-center">
               <span style={{ textTransform: "uppercase" }}>Learn More</span>
               <img
-                style={{ width: 24, height: 24, objectFit: "cover" }}
+                style={{ width: 32, height: "auto", objectFit: "cover" }}
                 alt="arrow"
                 className="px-2"
                 src={arrowForward}

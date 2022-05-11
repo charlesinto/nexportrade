@@ -13,31 +13,39 @@ const Home = () => {
     <>
       <section className={styles.sectionWelcome}>
         <div className={styles.welcomeText1}>
-          <div>
-            <h1 className={styles.header}>Transforming </h1>
-            <h1 className={styles.header}>West Africa’s </h1>
-            <h1 className={styles.header}>Trade Relations</h1>
-          </div>
+          <div className="container">
+            <div className="row">
+              <div className="col-md-12">
+                <div>
+                  <h1 className={styles.header}>Transforming </h1>
+                  <h1 className={styles.header}>West Africa’s </h1>
+                  <h1 className={styles.header}>Trade Relations</h1>
+                </div>
 
-          <article className="mb-3">
-            Nexportrade is a secure platform created by the Manufacturers
-            Association of Nigeria’s Export Promotion Group to boost trade
-            relations in ECOWAS member states and African Nations.
-          </article>
+                <article className="mb-3">
+                  Nexportrade is a secure platform created by the Manufacturers
+                  Association of Nigeria’s Export Promotion Group to boost trade
+                  relations in ECOWAS member states and African Nations.
+                </article>
 
-          <div className={styles.transparentName}>
-            <Button linkTo={PublicPaths.SERVICES} text={"OUR SERVICES"} />
-            <Button
-              linkTo={PublicPaths.CONTACT}
-              text={
-                <span className="d-flex align-items-center">
-                  <span style={{ textTransform: "uppercase" }}>Contact Us</span>
-                  <img alt="arrow" className="px-2" src={arrorForward} />
-                </span>
-              }
-              backgroundColor="#fff"
-              textColor={"#3EB259"}
-            />
+                <div className={styles.transparentName}>
+                  <Button linkTo={PublicPaths.SERVICES} text={"OUR SERVICES"} />
+                  <Button
+                    linkTo={PublicPaths.CONTACT}
+                    text={
+                      <span className="d-flex align-items-center">
+                        <span style={{ textTransform: "uppercase" }}>
+                          Contact Us
+                        </span>
+                        <img alt="arrow" className="px-2" src={arrorForward} />
+                      </span>
+                    }
+                    backgroundColor="#fff"
+                    textColor={"#3EB259"}
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div className={styles.welcomeImage1}></div>
